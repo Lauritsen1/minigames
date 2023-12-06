@@ -21,7 +21,7 @@ import {
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog'
 
-export default function MemoryGame() {
+export default function MemoryGamePage() {
   const [cards, dispatch] = useReducer(memoryGameReducer, initialCards)
   const [selectedCards, setSelectedCards] = useState<number[]>([])
   const [showDialog, setShowDialog] = useState<boolean>(false)
